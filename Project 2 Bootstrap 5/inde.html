@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Landing-page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <style>
+      .navbar-nav a {
+        display: inline-block; /* Atau gunakan display yang sesuai dengan layout kamu */
+        padding: 10px; /* Contoh padding, sesuaikan dengan kebutuhan */
+        margin: 0 1rem; /* Contoh margin, sesuaikan dengan kebutuhan */
+        text-decoration: none; /* Menghilangkan garis bawah pada link */
+        border-bottom: 2px solid transparent; /* Membuat border transparent agar tidak mengubah layout saat hover */
+        transition: border-bottom 0.3s; /* Transisi pada border-bottom */
+      }
+      .navbar-nav a:hover {
+        border-bottom: 2px solid orangered;
+      }
+      .bg-black a {
+        color: white; /* Mengatur warna teks menjadi putih */
+        text-decoration: none; /* Menghilangkan dekorasi teks */
+        margin-right: 1rem;
+        font-weight: 700;
+        border-bottom: 2px solid transparent; /* Membuat border transparent agar tidak mengubah layout saat hover */
+        transition: border-bottom 0.3s;
+      }
+      .bg-black a:hover {
+        border-bottom: 2px solid orangered;
+      }
+      .card img {
+        /* Menetapkan durasi transisi dan fungsi timing */
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .card img:hover {
+        /* Mengubah skala gambar saat di-hover */
+        transform: scale(1.1);
+      }
+      .card .card-body {
+        cursor: pointer;
+        transition: background-color 0.7s ease-in-out; /* Menambahkan transisi */
+      }
+
+      .card .card-body:hover {
+        background-color: rgb(171, 31, 31);
+      }
+      label {
+        color: red;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body id="home">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container text-white">
+        <a class="navbar-brand text-white fw-bolder fst-italic" href="#">
+          <img src="assets/—Pngtree—cool red wings logo_7129340.png" alt="Bootstrap" width="30" height="24" />
+          <span>MUKHLIS</span>
+        </a>
+        <button class="navbar-toggler text-bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto fw-medium">
+            <a class="nav-link active text-white" aria-current="page" href="#home">Home</a>
+            <a class="nav-link text-white" href="#about">About</a>
+            <a class="nav-link text-white" href="#services">Services</a>
+            <a class="nav-link text-white" href="#gallery">Gallery</a>
+            <a class="nav-link text-white" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar-end -->
+
+    <!-- main -->
+    <section class="container-fluid bg-black">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-white mt-5 ps-5 pe-3 mx-md-auto" style="">
+          <p>Full Stack Web Developer</p>
+          <h1>
+            HI, IM <span class="text-danger">MUKHLIS</span> <br />
+            FROM INDONESIA
+          </h1>
+        </div>
+        <div class="col-md-6">
+          <img src="assets/IMG_20220920_101919-removebg-preview.png" alt="foto1" width="380px" class="img-fluid mx-md-auto" />
+        </div>
+      </div>
+    </section>
+    <!-- main end -->
+
+    <!-- about me -->
+    <section class="container-fluid bg-black" id="about">
+      <div class="row text-white">
+        <div class="col-md-4 mt-5">
+          <img src="assets/IMG_20230112_135449_664.jpg" alt="foto2" width="400px" class="img-fluid ps-5 mt-2 mx-auto pe-5" />
+        </div>
+        <div class="col-md-8 mt-5">
+          <h2>About Me</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus officia aliquam nulla libero sed, perferendis numquam neque voluptatum exercitationem sit harum voluptate vel suscipit amet totam optio praesentium eum?
+            Culpa.
+          </p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae quod totam eaque ratione nihil sapiente nisi. Voluptatem aut earum fugit est officiis enim, ipsa consequatur in suscipit accusantium a dolore.</p>
+          <h6 class="text-danger">Nama :</h6>
+          <p>Muhammad Mukhlis</p>
+          <h6 class="text-danger">Asal :</h6>
+          <p>Padang, Sumatra Barat</p>
+        </div>
+      </div>
+    </section>
+    <!-- about me end -->
+
+    <!-- services -->
+    <section class="container-fluid bg-black" id="services">
+      <div class="row text-white">
+        <div class="col mt-5 ps-5">
+          <h1>My Services</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-3 mx-4">
+        <div class="col-md-4 mb-3 mb-sm-0">
+          <div class="card text-white satu" style="background-color: #222222">
+            <div class="card-body">
+              <i class="bi bi-code-slash" style="font-size: 3rem; font-weight: 900"></i>
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 text-white mb-3">
+          <div class="card text-white satu" style="background-color: #222222">
+            <div class="card-body">
+              <i class="bi bi-braces-asterisk" style="font-size: 3rem; font-weight: 900"></i>
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-white satu" style="background-color: #222222">
+            <div class="card-body">
+              <i class="bi bi-collection-play-fill" style="font-size: 3rem; font-weight: 900"></i>
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- services end -->
+
+    <!-- gallery -->
+    <section class="container-fluid bg-black" id="gallery">
+      <div class="row text-white">
+        <div class="col mt-5 ps-5">
+          <h1>My Gallery</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-3 mx-3">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="assets/IMG_20230618_200442.jpg" class="card-img-top" alt="fotocard1" width="100%" height="300px" style="object-fit: cover; cursor: pointer" />
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="assets/IMG_20230618_200359.jpg" class="card-img-top" alt="fotocard1" width="100%" height="300px" style="object-fit: cover; cursor: pointer" />
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="assets/IMG_20230618_200540.jpg" class="card-img-top" alt="fotocard1" width="100%" height="300px" style="object-fit: cover; cursor: pointer" />
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="assets/IMG_20230618_201040.jpg" class="card-img-top" alt="fotocard1" width="100%" height="300px" style="object-fit: cover; cursor: pointer" />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="assets/IMG_20230618_201122.jpg" class="card-img-top" alt="fotocard1" width="100%" height="300px" style="object-fit: cover; cursor: pointer" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- gallery end -->
+
+    <!-- contact -->
+    <section class="container-fluid" id="contact">
+      <div class="row bg-black text-white justify-content-center">
+        <div class="col-md-4 mt-5">
+          <h3>Contact Me</h3>
+          <p><i class="bi bi-telephone-fill pe-2 text-danger"></i> 085765746592</p>
+          <p><i class="bi bi-envelope-fill pe-2 text-danger"></i> muhammad.mukhlis005@gmail.com</p>
+          <i class="bi bi-facebook pe-2 text-danger"></i>
+          <i class="bi bi-whatsapp pe-2 text-danger"></i>
+          <i class="bi bi-instagram pe-2 text-danger"></i>
+          <i class="bi bi-github pe-2 text-danger"></i> <br />
+          <button type="button" class="btn btn-danger mt-3">Hubungi</button>
+        </div>
+        <div class="col-md-6 mt-5 mb-5">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+            </div>
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="exampleInputPassword1" />
+            </div>
+            <div class="mb-3">
+              <label for="nama" class="form-label">Pesan</label>
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            </div>
+            <button type="submit" class="btn btn-danger">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- contact end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
